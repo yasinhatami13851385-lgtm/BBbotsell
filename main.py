@@ -117,7 +117,7 @@ def cmd_start(message):
         "🔥 <b>پلن‌های نامحدود با قیمت باورنکردنی!</b>\n"
         "✅ کاربر نامحدود | ✅ مدت یك ماهه\n"
         "✅ سازگار با V2Ray، V2Box، NPVtunnel، HIDDEFY\n\n"
-        "برای خرید پینگخور گیم به پشتیبانی مراجعه کنید"
+        "برای خرید پینگخور گیم به پشتیبانی‌ مراجعه کنید/n"
         "👇 از منوی زیر شروع کن:"
     )
     bot.send_message(message.chat.id, welcome, parse_mode="HTML", reply_markup=main_menu())
