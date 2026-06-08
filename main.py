@@ -9,12 +9,12 @@ import re
 import database as db
 
 # =================== تنظیمات ===================
-BOT_TOKEN      = "8773215261:AAF67pQ9AHZrzvMOZlNbsnaG2-uoTo3HHyk"
-ADMIN_ID       = 7374971382
-ADMIN_USERNAME = "AIireza_1383"
-GROUP_ID       = -1004294169429
-CARD_NUMBER    = "5892101542283284"
-CARD_OWNER     = "علیرضا وحدانی اصل"
+BOT_TOKEN      = "8751401778:AAFt313lJaJOq8eAhhHwe0ck9Zh1BkSoGkg"
+ADMIN_ID       = 8331597927
+ADMIN_USERNAME = "IM_ZERO8"
+GROUP_ID       = -1003979928330
+CARD_NUMBER    = "5047061663693139"
+CARD_OWNER     = "یاسین حاتمی"
 
 REFERRAL_INVITEE_DISCOUNT = 5   # درصد تخفیف برای دعوت‌شده
 REFERRAL_REFERRER_DISCOUNT = 7  # درصد تخفیف برای معرف
@@ -33,10 +33,10 @@ group_msg_to_wallet_req = {}   # group_msg_id -> wallet_request_id
 group_msg_to_purchase   = {}   # group_msg_id -> purchase_id
 
 PLANS = {
-    "plan_10gb": {"name": "۱۰ گیگابایت", "price": 175000},
-    "plan_20gb": {"name": "۲۰ گیگابایت", "price": 325000},
-    "plan_30gb": {"name": "۳۰ گیگابایت", "price": 430000},
-    "plan_40gb": {"name": "۴۰ گیگابایت", "price": 560000},
+    "plan_20gb": {"name": "20GB", "price": 120000},
+    "plan_30gb": {"name": "30GB", "price": 150000},
+    "plan_40gb": {"name": "40GB", "price": 180000},
+    "plan_50gb": {"name": "50GB", "price": 210000},
 }
 
 def price_fmt(p):
