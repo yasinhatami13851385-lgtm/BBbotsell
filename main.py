@@ -56,6 +56,7 @@ def main_menu():
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
     markup.add(
         types.KeyboardButton("🛒 خرید کانفیگ"),
+        types.KeyboardButton("🛒 پینگ خور"),
         types.KeyboardButton("👛 کیف پول"),
         types.KeyboardButton("👤 حساب من"),
         types.KeyboardButton("👨‍💻 پشتیبانی"),
