@@ -56,7 +56,6 @@ def main_menu():
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
     markup.add(
         types.KeyboardButton("🛒 خرید کانفیگ"),
-        types.KeyboardButton("🛒 پینگ خور"),
         types.KeyboardButton("👛 کیف پول"),
         types.KeyboardButton("👤 حساب من"),
         types.KeyboardButton("👨‍💻 پشتیبانی"),
@@ -113,21 +112,13 @@ def cmd_start(message):
     welcome = (
         f"🎉 <b>سلام {message.from_user.first_name} عزیز، خوش اومدی!</b>\n\n"
         "━━━━━━━━━━━━━━━━━━━━━━\n"
-        "🌐 <b>VPN حرفه‌ای | سرعت بالا | بدون محدودیت</b>\n"
+        "🌐 <b> اتصال پایدار | سرعت بالا | </b>\n"
         "━━━━━━━━━━━━━━━━━━━━━━\n\n"
         "🔥 <b>پلن‌های نامحدود با قیمت باورنکردنی!</b>\n"
-        "✅ کاربر نامحدود | ✅ مدت نامحدود\n"
+        "✅ کاربر نامحدود | ✅ مدت یك ماهه\n"
         "✅ سازگار با V2Ray، V2Box، NPVtunnel، HIDDEFY\n\n"
-        "━━━━━━━━━━━━━━━━━━━━━━\n"
-        "🎁 <b>🎁 🎁 سیستم تخفیف دوستان 🎁 🎁 🎁</b>\n"
-        "━━━━━━━━━━━━━━━━━━━━━━\n\n"
-        f"🔗 لینک دعوت اختصاصی تو:\n<code>{ref_link}</code>\n\n"
-        f"👥 هر دوستی که با لینک تو بیاد و خرید کنه:\n"
-        f"  ➡️ <b>دوستت {REFERRAL_INVITEE_DISCOUNT}٪ تخفیف</b> روی اولین خریدش می‌گیره\n"
-        f"  ➡️ <b>تو {REFERRAL_REFERRER_DISCOUNT}٪ تخفیف</b> روی خرید بعدیت می‌گیری\n\n"
-        f"🏆 <b>هر {REFERRAL_REWARD_EVERY} نفر که دعوت کنی و خرید کنن = {REFERRAL_REWARD_GB} گیگابایت رایگان هدیه!</b>\n\n"
-        "━━━━━━━━━━━━━━━━━━━━━━\n"
-        "👇 از منو زیر شروع کن:"
+        "برای خرید پینگخور گیم به پشتیبانی مراجعه کنید"
+        "👇 از منوی زیر شروع کن:"
     )
     bot.send_message(message.chat.id, welcome, parse_mode="HTML", reply_markup=main_menu())
 
@@ -224,7 +215,7 @@ def show_plans(chat_id, uid):
     bot.send_message(chat_id,
         "💎 <b>پلن‌های موجود (نامحدود):</b>\n\n"
         "✅ تعداد کاربر: <b>نامحدود</b>\n"
-        "✅ مدت زمان: <b>نامحدود</b>\n\n"
+        "✅ مدت زمان: <b>یك ماهه</b>\n\n"
         "🚀 <b>سازگار با:</b>\n"
         "📶 V2RAY  |  ⚫ V2BOX\n"
         "🔐 NPVtunnel  |  🔐 HIDDEFY\n"
@@ -262,7 +253,7 @@ def cb_plan(call):
     bot.edit_message_text(
         f"✅ پلن <b>{plan['name']}</b> انتخاب شد.\n\n"
         "📝 لطفاً یک <b>نام انگلیسی</b> برای کانفیگ خود وارد کنید:\n"
-        "⚠️ <i>فقط حروف انگلیسی — مثال: Alireza</i>",
+        "⚠️ <i>فقط حروف انگلیسی — مثال: Yasin</i>",
         call.message.chat.id, call.message.message_id,
         parse_mode="HTML", reply_markup=markup)
 
